@@ -1,0 +1,65 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
+
+
+  :root {
+    font-size: 5px;
+    --neon-text: rgb(248, 248, 4);
+    --neon-border: rgb(67, 80, 223);
+  }
+
+  body {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: 'Exo 2', sans-serif;
+    background: #000000;
+  }
+
+  h1 {
+    font-size: 13rem;
+    font-weight: 200;
+    color: #fff;
+    padding: 4rem 6rem 5.5rem;
+    border: 0.4rem solid #fff;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    animation: shine 1.5s infinite alternate;
+  }
+
+
+
+
+  @keyframes shine {
+
+    0%,19%,21%,23%,25%,54%,56%,100% {
+
+      text-shadow:
+        -0.2rem -0.2rem 1rem #fff,
+        0.2rem 0.2rem 1rem #fff,
+        0 0 2rem var(--neon-text),
+        0 0 4rem var(--neon-text),
+        0 0 6rem var(--neon-text),
+        0 0 8rem var(--neon-text),
+        0 0 10rem var(--neon-text);
+
+      box-shadow:
+        0 0 .5rem #fff,
+        inset 0 0 .5rem #fff,
+        0 0 2rem var(--neon-border),
+        inset 0 0 2rem var(--neon-border),
+        0 0 4rem var(--neon-border),
+        inset 0 0 4rem var(--neon-border);
+    }
+    20%,24%,55% {
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+
+</style>
+
+<body>
+<h1>1k Followers</h1>
+</body>
